@@ -9,6 +9,7 @@ public class GeneralTestPage extends BasePage{
         super(driver);
     }
 
+    @Override
     public void navigateTo() {
         if (!driver.getCurrentUrl().equals("https://www.n11.com/"))
             driver.navigate().to("https://www.n11.com/");
